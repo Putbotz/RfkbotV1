@@ -9,4 +9,5 @@ handler.command = /^(bkp|bokep)$/i
 handler.premium = false
 handler.register = false
 handler.limit = true
+handler.owner = true
 module.exports = handler
