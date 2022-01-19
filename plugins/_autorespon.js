@@ -26,27 +26,8 @@ handler.all = async function (m, { isBlocked }) {
         return
     }
 
-    // ketika ada yang invite/kirim link grup di chat pribadi
-    if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup && !m.fromMe && !m.isOwner) {
-        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
-╠➥ *1 Bulan* :      *Rp 10000*
-╠➥ *Permanen* : *Rp 15000*
-╠➥ *Premium* :   *Rp 15000*
-╠➥ *Sc Bot* :        *Masih Beta*
-║
-╠═〘 PEMBAYARAN 〙 ═
-╠➥ Gopay, Dana, Dan Pulsa
-║
-╠═ Tertarik Untuk Beli Bot Ini?
-╠➥Ketuk Tombol Di Bawah Ya
-║
-╠═ ©2021 Rpg wabot-aq
-╠═ Scrip original by Nurutomo
-╠═〘 ${namabot} 〙 ═`.trim(), footer, 'Dana', '#viadana', 'GoPay', '#viagopay', m)
-}
-
     // salam
-    let reg = /(ass?alam|اَلسَّلاَمُ عَلَيْكُمْ|السلام عليکم)/i
+    let reg = /(ass?alam|اَلسَّلاَمُ عَلَيْكُمْ|السلام عليکم/aslm)/i
     let isSalam = reg.exec(m.text)
     if (isSalam && !m.fromMe) {
         m.reply(`وَعَلَيْكُمْ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ\n_wa\'alaikumussalam wr.wb._`)
