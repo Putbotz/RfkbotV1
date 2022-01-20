@@ -44,8 +44,8 @@ lolkey = 'RFK-Rey'
 zekskey = 'apivinz'
 xteamkey = 'Dawnfrostkey'
 //xteam        MIMINETBOT
-namaig = 'GAK ADA :)'
-namagithub = 'GAK ADA :)'
+namaig = 'unluckyputttt'
+namagithub = 'https://github.com/Putbotz'
 kasihcaption = `Nih kak`
 namakontak1 = 'Putbotz ganteng'
 namakontak2 = 'Putbotz'
